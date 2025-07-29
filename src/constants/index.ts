@@ -23,7 +23,7 @@ export const HTTP_STATUS = {
 } as const
 
 export const MESSAGES = {
-  WELCOME: 'Welcome to Deno Hono API',
-  WELCOME_PRODUCTION: 'Welcome to Deno Hono API - Production',
+  WELCOME: 'Welcome to api.ayush.im',
+  WELCOME_PRODUCTION: 'Welcome to api.ayush.im - Production',
   HEALTHY: 'healthy'
 } as const 
