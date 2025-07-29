@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "imports": {
+    "@hono/hono": "jsr:@hono/hono@^4.6.3"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch main.ts",
+    "start": "deno run --allow-net --allow-env main.ts",
+    "serve": "deno run --allow-net --allow-env src/server.ts",
+    "deploy": "deno run --allow-net --allow-env deploy.ts",
+    "check": "deno check src/**/*.ts main.ts deploy.ts",
+    "fmt": "deno fmt src/ main.ts deploy.ts",
+    "lint": "deno lint src/ main.ts deploy.ts"
+  },
+  "exclude": [
+    "node_modules",
+    ".git"
+  ]
+} 
