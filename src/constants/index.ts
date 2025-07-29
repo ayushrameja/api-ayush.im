@@ -10,7 +10,8 @@ export const APP_CONFIG = {
 export const API_ENDPOINTS = {
   ROOT: '/',
   HEALTH: '/api/health',
-  QUOTE: '/api/quote'
+  QUOTE: '/api/quote',
+  QUOTES: '/api/quotes'
 } as const
 
 export const HTTP_STATUS = {

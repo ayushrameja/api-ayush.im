@@ -23,12 +23,13 @@ export class QuoteCache {
   }
 
   getNextQuote(): { quote: string; index: number; total: number } {
-    const quote = quotes[this.currentIndex]
+    const currentIndex = this.currentIndex
+    const quote = quotes[currentIndex]
     this.currentIndex = (this.currentIndex + 1) % quotes.length
     
     return {
       quote,
-      index: this.currentIndex,
+      index: currentIndex,
       total: quotes.length
     }
   }

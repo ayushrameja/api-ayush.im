@@ -6,6 +6,6 @@ import { QuoteController } from '../controllers/quoteController.ts'
 const quoteRoutes = new Hono()
 
 quoteRoutes.get(API_ENDPOINTS.QUOTE, QuoteController.getQuote)
-quoteRoutes.get(API_ENDPOINTS.QUOTE, QuoteController.getAllQuotes)
+quoteRoutes.get(API_ENDPOINTS.QUOTES, QuoteController.getAllQuotes)
 
 export { quoteRoutes } 

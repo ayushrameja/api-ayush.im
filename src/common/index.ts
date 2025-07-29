@@ -1,7 +1,3 @@
-export const formatTimestamp = (date: Date = new Date()): string => {
-  return date.toISOString()
-}
-
 export const getEnvironmentVariable = (key: string, defaultValue?: string): string => {
   return Deno.env.get(key) || defaultValue || ''
 }
